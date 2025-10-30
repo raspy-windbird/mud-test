@@ -22,3 +22,5 @@ async function boot (params) {
     Dom.clicked(button,loglog,"true");
 
 }
+
+main()
