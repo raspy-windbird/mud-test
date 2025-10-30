@@ -3,7 +3,6 @@ const Dom = new dom;
 
 //main
 function main () {
-    S_background.boot();
     console.log("main ---LOADING startup---")
     startup();
 }
@@ -16,6 +15,8 @@ function startup () {
         boot();
     }
     Dom.clicked(document,clickdo1,"true")
+    const elem = document.getElementById("background");
+    S_background.boot(elem);
 }
 
 function boot () {
@@ -36,7 +37,7 @@ function process () {
 
 //STYLE//
 const S_background = {
-    boot: ()=> anime({
+    boot: (elem)=> anime({
         targets: elem,
         translateX: 250                
     }),
