@@ -1,5 +1,5 @@
 class dom {
-create (ele,origin_id,attribute) {
+async create (ele,origin_id,attribute) {
     // ele: 作りたい要素のタグ「h1」など
     // origin_id: 親となる要素のid
     // attribute: 変更したい要素を「value,hellow」のようなペアで入れる
@@ -13,7 +13,7 @@ create (ele,origin_id,attribute) {
     document.getElementById(origin_id).appendChild(element);
 }
 
-clicked (dom,dothing,One){
+async clicked (dom,dothing,One){
     document.addEventListener("DOMContentLoaded",() => {
     if (dom) {
         dom.addEventListener("click", () => {

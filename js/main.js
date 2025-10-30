@@ -15,9 +15,12 @@ async function startup () {
 
 async function boot (params) {
     const button_id = "boot";
-    Dom.create("input","boot",{type:"button",value:"SYSTEM",id:button_id});
+    await Dom.create("input", "boot", { type: "button", value: "SYSTEM", id: button_id });
     const button = document.getElementById(button_id);
-    function loglog() {dom.remove();}
+    function clickdo() {
+        console.log("hello");
+        button.remove();
+    }
     Dom.clicked(button,loglog,"true");
 
 }
