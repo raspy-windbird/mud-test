@@ -17,7 +17,7 @@ async function startup () {
 
 async function boot () {
     const button_id = "boot";
-    await Dom.create("input", "boot", { type: "button", value: "SYSTEM", id: button_id });
+    Dom.create("input", "boot", { type: "button", value: "SYSTEM", id: button_id });
     const button = document.getElementById(button_id);
     function clickdo2() {
         console.log("hello");
