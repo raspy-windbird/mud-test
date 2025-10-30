@@ -1,4 +1,4 @@
-import {dom} from "./Dom";
+import {dom} from "./Dom.js";
 
 const Dom = new dom;
 async function main () {
