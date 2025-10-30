@@ -21,10 +21,9 @@ function boot () {
     const button = document.getElementById(button_id);
     function clickdo2() {
         console.log("hello");
-        button.remove();
     }
     Dom.clicked(button,clickdo2,"true");
-
+    button.remove();
 }
 
 main();
