@@ -15,7 +15,7 @@ async function startup () {
     Dom.clicked(document,clickdo,"true")
 }
 
-async function boot (params) {
+async function boot () {
     const button_id = "boot";
     await Dom.create("input", "boot", { type: "button", value: "SYSTEM", id: button_id });
     const button = document.getElementById(button_id);
@@ -27,4 +27,4 @@ async function boot (params) {
 
 }
 
-main()
+window.onload = main
