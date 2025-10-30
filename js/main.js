@@ -27,4 +27,4 @@ async function boot () {
 
 }
 
-window.onload = main
+main();
