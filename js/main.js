@@ -19,10 +19,7 @@ function boot () {
     const button_id = "boot_button";
     Dom.create("input", "boot", { type: "button", value: "SYSTEM", id: button_id });
     const button = document.getElementById(button_id);
-    function clickdo2() {
-        button.remove();
-    }
-    Dom.clicked(button,clickdo2,"true");
+    Dom.clicked(button,butoon.remove(),"true");
 }
 
 main();
