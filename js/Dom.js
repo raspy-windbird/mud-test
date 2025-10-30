@@ -16,13 +16,14 @@ async create (ele,origin_id,attribute) {
 }
 /**
  * 
- * @param {Text} dom 検知する要素
+ * @param {Text} dom 検知する要素のid
  * @param {Function} dothing クリックされた場合の動作
  * @param {Boolean} One 一度のみの実行か
  */
 async clicked (dom,dothing,One){
     document.addEventListener("DOMContentLoaded",() => {
     if (dom) {
+        const ele = document.getElementById(dom);
         dom.addEventListener("click", () => {
             dothing();
         }, { once: One})
