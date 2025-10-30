@@ -1,8 +1,24 @@
-import {startup} from "./startup.js";
-import {boot} from "./boot.js";
+import dom from "./Dom";
 
-console.log("main.js ---LOADING startup.js---");
-startup();
+const Dom = new dom;
+async function main () {
+    console.log("main ---LOADING startup---")
+    await startup();
 
-console.log("main.js ---LOADING boot.js---");
-boot();
+    await boot();
+}
+
+async function startup () {
+    console.log("startup ---STANDBY---");
+    function dosomething(){console.log("clicked")}
+    Dom.clicked(document,dosomething,"true");
+}
+
+async function boot (params) {
+    const button_id = "boot";
+    Dom.create("input","boot",{type:"button",value:"SYSTEM",id:button_id});
+    const button = document.getElementById(button_id);
+    function loglog() {console.log("click")}
+    Dom.clicked(button,loglog,"true");
+
+}
