@@ -22,7 +22,7 @@ function boot () {
     function clickdo2() {
         button.remove();
     }
-    Dom.clicked(button_id,clickdo2,"true");
+    Dom.clicked(button,clickdo2,"true");
 }
 
 main();

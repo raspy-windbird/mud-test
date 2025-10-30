@@ -23,7 +23,6 @@ async create (ele,origin_id,attribute) {
 async clicked (dom,dothing,One){
     document.addEventListener("DOMContentLoaded",() => {
     if (dom) {
-        const ele = document.getElementById(dom);
         dom.addEventListener("click", () => {
             dothing();
         }, { once: One})
