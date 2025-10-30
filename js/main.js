@@ -21,7 +21,7 @@ async function boot (params) {
         console.log("hello");
         button.remove();
     }
-    Dom.clicked(button,loglog,"true");
+    Dom.clicked(button,clickdo,"true");
 
 }
 
