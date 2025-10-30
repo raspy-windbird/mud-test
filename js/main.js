@@ -8,22 +8,22 @@ async function main () {
 
 async function startup () {
     console.log("startup ---STANDBY---");
-    function clickdo(){
+    function clickdo1(){
         console.log("hello!")
         boot()
     }
-    Dom.clicked(document,clickdo,"true")
+    Dom.clicked(document,clickdo1,"true")
 }
 
 async function boot () {
     const button_id = "boot";
     await Dom.create("input", "boot", { type: "button", value: "SYSTEM", id: button_id });
     const button = document.getElementById(button_id);
-    function clickdo() {
+    function clickdo2() {
         console.log("hello");
         button.remove();
     }
-    Dom.clicked(button,clickdo,"true");
+    Dom.clicked(button,clickdo2,"true");
 
 }
 
