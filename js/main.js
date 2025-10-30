@@ -1,9 +1,9 @@
 import dom from "./Dom.js";
 
 const Dom = new dom;
-async function main () {
+function main () {
     console.log("main ---LOADING startup---")
-    await startup();
+    startup();
 }
 
 async function startup () {
@@ -15,7 +15,7 @@ async function startup () {
     Dom.clicked(document,clickdo1,"true")
 }
 
-async function boot () {
+function boot () {
     const button_id = "boot";
     Dom.create("input", "boot", { type: "button", value: "SYSTEM", id: button_id });
     const button = document.getElementById(button_id);
