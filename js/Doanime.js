@@ -1,3 +1,5 @@
+const timeline = createtimeline()
+
 const background = {
     boot: (elem)=> {
         anime.set(elem,
