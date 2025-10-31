@@ -1,6 +1,8 @@
 import Dom from "./Dom.js";
 import Doanime from "./Doanime.js";
 
+const dom = new Dom
+
 //main
 function main () {
     console.log("main ---LOADING startup---")
@@ -14,7 +16,7 @@ function startup () {
         console.log("startup ---LOADING boot---");
         boot();
     }
-    Dom.clicked(document,clickdo1,"true")
+    dom.clicked(document,clickdo1,"true")
     
     const elem = document.getElementById("background");
     elem.addEventListener("DOMContentLoaded",Doanime.background.boot(elem))
@@ -22,7 +24,7 @@ function startup () {
 
 function boot () {
     const button_id = "boot_button";
-    Dom.create("input", "boot", { type: "button", value: "SYSTEM", id: button_id });
+    dom.create("input", "boot", { type: "button", value: "SYSTEM", id: button_id });
     
     const button = document.getElementById(button_id);
     button.addEventListener('click', () => {
