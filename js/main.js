@@ -17,7 +17,7 @@ function startup () {
         console.log("startup ---LOADING boot---");
         boot();
     }
-    dom.clicked(document,clickdo,"true")
+    dom.clicked(document.body,clickdo,"true")
     
     //anime
     const elem = dom.select("background");
