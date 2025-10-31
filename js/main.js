@@ -12,25 +12,28 @@ function main () {
 //SCRIPT//
 function startup () {
     console.log("startup ---STANDBY---");
-    function clickdo1(){
+
+    function clickdo(){
         console.log("startup ---LOADING boot---");
         boot();
     }
-    dom.clicked(document,clickdo1,"true")
+    dom.clicked(document,clickdo,"true")
     
-    const elem = document.getElementById("background");
+    //anime
+    const elem = dom.select("background");
     elem.addEventListener("DOMContentLoaded",Doanime.background.boot(elem))
+    //
 }
 
 function boot () {
     const button_id = "boot_button";
     dom.create("input", "boot", { type: "button", value: "SYSTEM", id: button_id });
     
-    const button = document.getElementById(button_id);
-    button.addEventListener('click', () => {
-    console.log("boot ---STARTED---");
-    button.remove();
-    });
+    function clickdo (){
+        console.log("boot ---STARTED---");
+        dom.remove(button_id);
+    }
+    dom.clicked(button_id,clickdo,"true")
 }
 
 function process () {

@@ -34,6 +34,7 @@ clicked (dom,dothing,One){
 }
 }
 */
+
 class Dom {
     /**
      * 要素を作成し、親要素に追加する
@@ -102,6 +103,15 @@ class Dom {
      */
     get(selector) {
         return document.querySelector(selector);
+    }
+
+    /**
+     * 指定したIDの要素を戻り値として返す
+     * @param {string} id 選びたい要素のID
+     * @returns {HTMLElement|null} 一致した要素、またはnull
+     */
+    select(id){
+        return document.getElementById(id)
     }
 
     /**
