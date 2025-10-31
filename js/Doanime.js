@@ -1,5 +1,5 @@
 const Doanime = {
-    background:background,
+    background: background,
 
 }
 
@@ -8,7 +8,5 @@ const background = {
         targets: elem,
         translateX: 250                
     }),
-    
-      
 }
 export default Doanime;

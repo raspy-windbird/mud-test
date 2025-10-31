@@ -1,4 +1,4 @@
-class dom {
+class Dom {
 /**
  * 
  * @param {Text} ele 作成要素のhtmlタグ
@@ -32,4 +32,4 @@ async clicked (dom,dothing,One){
 
 }
 
-export default dom;
+export default Dom;

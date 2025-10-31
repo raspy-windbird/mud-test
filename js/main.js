@@ -1,5 +1,5 @@
-import dom from "./Dom.js";
-const Dom = new dom;
+import Dom from "./Dom.js";
+import Doanime from "./Doanime.js";
 
 //main
 function main () {
