@@ -12,6 +12,9 @@ const background = {
     },
 }
 
+//再読込時にうまくいかない
+//chatgptに聞いてみる
+
 const Doanime = {
     background: background,
 
