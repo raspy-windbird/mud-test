@@ -35,24 +35,4 @@ function process () {
 
 }
 
-
-//STYLE//
-const S_background = {
-    boot: (elem)=> anime({
-        targets: elem,
-        translateX: 250                
-    }),
-    
-      
-}
-
-
-
-
-
-
-
-
-
-
 main();
