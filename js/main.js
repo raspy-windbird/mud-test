@@ -17,7 +17,7 @@ function startup () {
     Dom.clicked(document,clickdo1,"true")
     
     const elem = document.getElementById("background");
-    elem.addEventListener("DOMContentLoaded",S_background.boot(elem))
+    elem.addEventListener("DOMContentLoaded",Doanime.background.boot(elem))
 }
 
 function boot () {
